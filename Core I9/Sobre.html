@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+
+font-family: arial;
+font-size: 50px; 
+
+}
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 50px 50px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: arial;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+.modal {
+  display: none; /
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style> 
+</head>
+<body>
+	 <ul>
+  <li><a href="Clique aqui !.html">Inicio</a></li>
+  <li><a href="Contato.html">Contato</a></li>
+   <li><a href="Form 2.html">Cadastro</a></li>
+  <li><a href="https://www.google.com.br/maps/place/Apple/@-23.6228139,-46.733019,13z/data=!3m1!5s0x94ce50c35051409d:0x5413612e68999950!4m8!1m2!2m1!1sapple+store+!3m4!1s0x94ce50c3630a904f:0xc3ada4f5330b7b1d!8m2!3d-23.6228139!4d-46.6980001">Localização</a></li>
+  <li style="float:right"><a class="active" href="Sobre.html">Sobre</a></li>
+</ul>
+<p> Criado por um grupo de estudantes da ETEC Professor Camargo Aranha.</p>  <center><img src="download.png" alt="Camargo t" width="400" height="100"></center>
+<br>
+<br>
+
+
+<center><img id="myImg" src="Foto amigos .jpg" alt="Diego Miranda, Lucas Gagliato e Henrique Barros." width="500" height="600"></center>
+
+
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+
+<script>
+
+var modal = document.getElementById('myModal');
+
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</div>
+</body>
+</html>
+
+

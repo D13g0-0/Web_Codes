@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Cadastro</title>
+
+	</head>
+	<style>
+		
+	  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 50px 50px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: arial;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+div {
+  background-color: black;
+  max-width;
+   padding: 50px;
+  margin: 0px;
+ font-family: sans-serif;
+ color: white;
+ font-size: 40px;
+
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+	</style>
+
+<body>
+
+		 <ul>
+  <li><a href="Promoção.html">Inicio</a></li>
+  <li><a href="Contato.html">Contato</a></li>
+   <li><a href="Form.html">Cadastro</a></li>
+  <li><a href="https://www.google.com.br/maps/place/Apple/@-23.6228139,-46.733019,13z/data=!3m1!5s0x94ce50c35051409d:0x5413612e68999950!4m8!1m2!2m1!1sapple+store+!3m4!1s0x94ce50c3630a904f:0xc3ada4f5330b7b1d!8m2!3d-23.6228139!4d-46.6980001">Localização</a></li>
+  <li style="float:right"><a class="active" href="Sobre.html">Sobre</a></li>
+</ul>
+
+		<h1> Informações Pessoais </h1>
+
+		<form>
+
+			Nome*
+
+			<br><label for="nome1"></label>
+
+				<input type="text" size = "108" placeholder="João da Silva Fernandes"required>
+
+				<br><br>
+
+			Email* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nascimento*
+
+			<br><label for="email"></label>
+
+				<input type="email" name="email" placeholder="exemplo123@gmail.com" size="80" required>
+
+			<label for="nascimento"></label>
+
+				<input type="date" name="nascimento" size= "30" required>	 
+
+			<br><br>
+
+			Telefone* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identidade* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPF* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Número*<br>
+
+							 
+
+								<input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="11-912-345-678" required>
+
+							<label for="iden"></label>
+
+								<input type="text" size="10" placeholder="123456789-0 SP" required>
+
+							<label for="cpf"></label>
+
+								<input type="tel" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" size = "23" placeholder="123.456.789-01" required>
+
+							<label for="numero" size="14">
+
+								<input for="number" name="numerorua" placeholder="123" required>
+
+			<br><br> Rua* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bairro*
+
+				<br><label for="Rua"></label>
+
+						<input type="text" size="51" required>
+
+					<label for="bairro"></label>
+
+						<input type="text" size="51" required>
+
+			<br> <br>
+
+				Cidade*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estado*
+
+				<br><label for="cidade"></label>
+
+						<input type="text" size="27" required>
+
+				<select name="estado" required>
+
+					<option value="Acre">Acre</option>
+
+					<option value="Alagoas">Alagoas</option>
+
+					<option value="Amapá">Amapá</option>
+
+					<option value="Amazonas">Amazonas</option>
+
+					<option value="Bahia">Bahia</option>
+
+					<option value="Ceará">Ceará</option>
+
+					<option value="Distrito Federal">Distrito Federal</option>
+
+					<option value="Espirito Santo">Espirito Santo</option>
+
+					<option value="Goiás">Goiás</option>
+
+					<option value="Maranhão">Maranhão</option>
+
+					<option value="Mato Grosso">Mato Grosso</option>
+
+					<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+
+					<option value="Minas Gerais">Minas Gerais</option>
+
+					<option value="Pará">Pará</option>
+
+					<option value="Paraíba">Paraíba</option>
+
+					<option value="Paraná">Paraná</option>
+
+					<option value="Pernambuco">Pernambuco</option>
+
+					<option value="Piaui">Piaui</option>
+
+					<option value="Rio de Janeiro">Rio de Janeiro</option>
+
+					<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+
+					<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+
+					<option value="Rondônia">Rondônia</option>
+
+					<option value="Roraima">Roraima</option>
+
+					<option value="Santa Catarina">Santa Catarina</option>
+
+					<option value="São Paulo">São Paulo</option>
+
+					<option value="Sergipe">Sergipe</option>
+
+					<option value="Tocantins">Tocantins</option>
+
+					</select>
+
+			<br><br>
+
+			<label for="sexo"> *Sexo:</label><br>
+
+				<input type="radio" name="sexo" value="masculino"> Masculino <br>
+
+				<input type="radio" name="sexo" value="feminino"> Feminino <br>
+
+				<input type="radio" name="sexo" value="outro" required> Outro
+
+			<br><br>
+
+			<input type="submit" size = "10">
+
+		</form>
+
+</body>
+
+</html>
+

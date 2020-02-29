@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+     ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 50px 50px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: arial;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style> 
+<body>
+   <ul>
+  <li><a href="Clique aqui !.html">Inicio</a></li>
+  <li><a href="Contato.html">Contato</a></li>
+   <li><a href="Form 2.html">Cadastro</a></li>
+  <li><a href="https://www.google.com.br/maps/place/Apple/@-23.6228139,-46.733019,13z/data=!3m1!5s0x94ce50c35051409d:0x5413612e68999950!4m8!1m2!2m1!1sapple+store+!3m4!1s0x94ce50c3630a904f:0xc3ada4f5330b7b1d!8m2!3d-23.6228139!4d-46.6980001">Localização</a></li>
+  <li style="float:right"><a class="active" href="Sobre.html">Sobre</a></li>
+</ul>
+
+  <h1> Faça seu cadastro!</h1>
+   <br>
+  
+<form>
+<label for="nome"> Nome:</label>
+<input type="text" name ="nome" id ="nome" placeholder= "Digite seu nome" size ="30" >
+<br> <br>
+<label for="endereço"> Endereço:</label>
+<input type="text" name ="end" id ="endereço" placeholder= "Digite seu endereço" size ="50" maxlength ="100" >
+<br> <br>
+<label for="endereço"> Estado:</label>
+<select name="Estado">
+  <option value="AC">Acre</option>
+  <option value="AL">Alagoas</option>
+  <option value="AP">Amapá</option>
+  <option value="AM">Amazonas</option>
+  <option value="BA">Bahia</option>
+  <option value="CE">Ceará</option>
+  <option value="DF">Distrito Federal</option>
+  <option value="ES">Espírito Santo</option>
+  <option value="GO">Goiás</option>
+  <option value="MA">Maranhão</option>
+  <option value="MT">Mato Grosso</option>
+  <option value="MS">Mato Grosso do Sul</option>
+  <option value="MG">Minas Gerais</option>
+  <option value="PA">Pará</option>
+  <option value="PB">Paraíba</option>
+  <option value="PR">Paraná</option>
+  <option value="PE">Pernambuco</option>
+  <option value="PI">Piauí</option>
+  <option value="RJ">Rio de Janeiro</option>
+  <option value="RN">Rio Grande do Norte</option>
+  <option value="RS">Rio Grande do Sul</option>
+  <option value="RO">Rondônia</option>
+  <option value="RR">Roraima</option>
+  <option value="SC">Santa Catarina</option>
+  <option value="SP">São Paulo</option>
+  <option value="SE">Sergipe</option>
+  <option value="TO">Tocantins</option>
+</select>
+<br> <br>
+<label for="fone"> Telefone:</label>
+<input type="text" name ="fone" id ="fone" placeholder= "99 99999-9999" size ="20" maxlenght ="13">
+<br> <br>
+<label for="email"> Email:</label>
+<input type="text" name ="email" id ="email" placeholder= "Digite seu email" size ="20" maxlenght ="35">
+<br> <br>
+  <label for="endereço"> Sexo:</label>
+ <select name="sexo" id="sexo">
+    <option value="Masculino">Masculino</option>
+    <option value="Feminino">Feminino</option>
+  <option value="Outros">Outros</option>
+  </select>
+
+<br> <br>
+ <input type="submit" value="Enviar">
+
+</form>
+</body>
+</html>
